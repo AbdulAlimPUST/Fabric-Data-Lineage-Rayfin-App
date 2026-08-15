@@ -1,0 +1,23 @@
+id: data-lineage
+name: Data Lineage
+version: 1.0.0
+services:
+  auth:
+    enabled: true
+    fabric:
+      enabled: true
+    allowedRedirectUris:
+      - http://localhost:5173
+      - https://noble-fjord-684e43fb2a-centralus.webapp.fabricapps.net
+      - https://brave-glen-6882de8600-centralus.webapp.fabricapps.net
+  data:
+    enabled: false
+  storage:
+    enabled: false
+  staticHosting:
+    enabled: true
+    folder: dist
+    buildCommand: npm run build:fabric
+    indexDocument: index.html
+  functions:
+    enabled: false

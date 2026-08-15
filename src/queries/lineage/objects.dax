@@ -1,0 +1,3 @@
+EVALUATE
+    'objects'
+ORDER BY 'objects'[item_name], 'objects'[schema_name], 'objects'[object_name]
